@@ -31,6 +31,7 @@ def create_500k_record_list():
 
 
 def write_records_to_file():
+    """ """
     records = create_500k_record_list()
     with open('source_file.json', 'w') as file:
         json.dump(records, file, indent=2)

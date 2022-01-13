@@ -39,3 +39,9 @@ def insert_bulk():
 def fine_by_id(id):
     record = collection.find_one({'id': id}, {"_id": 0}, sort=[("date.created", DESCENDING)])
     return record
+
+
+def fine_by_date(date):
+    records = collection.find({'date.created': date})
+    for record in records:
+        print(record)
