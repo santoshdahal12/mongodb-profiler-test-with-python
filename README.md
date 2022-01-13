@@ -1,0 +1,1 @@
+# mongodb-with-python-bulk-insert
